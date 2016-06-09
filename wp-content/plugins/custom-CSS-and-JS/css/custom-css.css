@@ -5,3 +5,11 @@
 .main-title{
 
 }
+.main-image{
+    margin-top:-21%;
+ }
+@media screen and (max-width: 765px) {
+    .main-image{
+    	margin-top:0px;
+    }
+}
