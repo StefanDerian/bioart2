@@ -1,13 +1,21 @@
 .mid-content{
 	width: 100%!important;
 }
-
+.mid-content{
+    overflow: hidden;
+}
 .main-title{
 
 }
 .main-image{
     margin-top:-21%;
  }
+.parallax-section h1 span::after{
+	border-bottom: none!important;
+}
+[class^="icon-"], [class*=" icon-"]{
+    width: 100px!important;
+}
 @media screen and (max-width: 765px) {
     .main-image{
     	margin-top:0px;

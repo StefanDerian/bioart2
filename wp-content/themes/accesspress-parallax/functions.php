@@ -251,3 +251,5 @@ function accesspress_parallax_get_my_option()
 }
 
 add_action("wp_ajax_get_my_option", "accesspress_parallax_get_my_option");
+add_filter('widget_text','shortcode_unautop');
+add_filter('widget_text','do_shortcode');
