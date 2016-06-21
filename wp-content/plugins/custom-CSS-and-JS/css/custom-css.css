@@ -20,16 +20,59 @@ header{
 
 }
 
-
-
-
-
+.btn{
+    padding:none!important;
+}
+.btn:hover{
+    background: yellow!important;
+    color:black!important;
+   
+}
+.modal-dialog{
+    width: 90%;
+    border-radius: none;
+}
+.blog-list{
+    transition: all 0.5s;
+}
+.blog-list:hover{
+    background: #B5C00D!important;
+    color:black!important;
+    text-decoration: none!important
+}
+.modal-header{
+    color:#ffffff;
+    background: #6ebc0d;
+}
 p{
     font-family: arial;
+}
+#header{
+    padding: none;
+}
+#masthead{
+    padding: 0px !important;
+}
+.main-navigation{
+    margin-top: 2%!important;
+}
+.main-navigation > ul{
+    background: #ffffff!important;
+}
+.main-navigation > ul>li>a{
+   
+    color: #000000!important;
 }
 .main-navigation > ul > li > a{
     font-family: 'Helvetica';
     font-size: 108%!important;
+}
+.cross{
+    border-left:1px solid grey;
+}
+.main-navigation li:hover > a{
+     background-color: #50C809!important;
+     color:#ffffff!important;
 }
 .main-navigation > ul > li{
     border-right: 1px solid grey;
@@ -43,13 +86,13 @@ p{
  border:none;
  background-color: #ffffff!important;
 }
-.main-navigation > ul > li:hover{
-   background: #000000;
-}
+
 .main-navigation > ul > li.current a{
     color:#ffffff!important;
+    background-color: #50C809!important;
 }
 .main-navigation > ul > li.current{
+    color:#ffffff!important;
     background-color: #50C809!important;
 }
 .main-image{
@@ -88,6 +131,9 @@ p{
     font-family: vonn!important;
 }
 @media screen and (max-width: 765px) {
+    .main-navigation > ul > li{
+        border-bottom: 1px solid #000000!important;
+    }
     .main-image{
     	margin-top:0px;
     }
@@ -98,6 +144,10 @@ p{
     }
     .blog-list{
         width: 100%!important;
+    }
+    .menu-toggle{
+        background: #50C809!important;
+        color:#ffffff!important;
     }
     #postModal{
         margin-top: 27%;

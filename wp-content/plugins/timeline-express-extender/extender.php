@@ -22,14 +22,20 @@
  	
 
  	$return = array();
- 	$args = array('p' =>  intval($_POST['postId'] ));
- 	$post_result = new WP_Query(array('p' =>  intval($_POST['postId'] )));
+ 	$post_id = intval($_POST['postId'] );
+ 	
+ 	$post_result = new WP_Query(array('p' =>  intval($_POST['postId'] ),
+ 		'post_type'              => array( 'te_announcements' )
+ 		)
+ 	);
 
  	if ( $post_result->have_posts() ) {
 
  		while ( $post_result->have_posts() ) {
  			$post_result->the_post();
+ 			$image_id = get_post_meta ($post_id,$key = 'announcement_image_id');
 
+ 			$return['image'] = wp_get_attachment_image($image_id[0],'large');
  			$return['title']=get_the_title();
  			$return['content']=get_the_content();
  		}
